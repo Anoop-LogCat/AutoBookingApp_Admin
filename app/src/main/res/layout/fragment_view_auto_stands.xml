@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".ViewAutoStands">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/districts"/>
+
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="161dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selectorradiostyle"
+                android:button="@null"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:gravity="center"
+                android:text="@string/trivandrum"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/kollam" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/alappuzha" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+            <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:padding="20dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/pathanamthitta" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/kottayam" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/idukki" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="20dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/ernakulam" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/thrissur" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/palakkad" />
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/malappuram" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:padding="20dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/kozhikode" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="28dp"
+                    android:paddingRight="28dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/wayanadu" />
+
+            <Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioButton13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="30dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:textColorLink="@color/colorButtonText"
+                    android:text="@string/kannur" />
+
+                <Space
+                    android:layout_width="5dp"
+                    android:layout_height="wrap_content"/>
+                <RadioButton
+                    android:id="@+id/radioButton14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingRight="25dp"
+                    android:background="@drawable/selectorradiostyle"
+                    android:text="@string/kasaragod" />
+
+            </RadioGroup>
+        </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/auto_stand"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/progressInViewAutoStand"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            style="@style/AVLoadingIndicatorView"
+            app:indicatorName="LineSpinFadeLoaderIndicator"
+            app:indicatorColor="@color/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/noDataLayoutInViewAutoStand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:src="@drawable/warning"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/black_overlay"
+                android:text="No Auto Stand Available"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/allStandsRecycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

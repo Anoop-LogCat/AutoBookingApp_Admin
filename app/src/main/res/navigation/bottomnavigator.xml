@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottomnavigator"
+    app:startDestination="@id/addAutoStand">
+
+    <fragment
+        android:id="@+id/eachDriver"
+        android:name="logcat.ayeautoapps.autoadmin.EachDriver"
+        android:label="fragment_each_driver"
+        tools:layout="@layout/fragment_each_driver">
+        <argument
+            android:name="driverName"
+            app:argType="string"
+            android:defaultValue="demo driver name" />
+        <argument
+            android:name="driverStandName"
+            app:argType="string"
+            android:defaultValue="demo stand name" />
+        <argument
+            android:name="demoStandLocation"
+            app:argType="string"
+            android:defaultValue="demo stand location" />
+        <argument
+            android:name="driverUid"
+            app:argType="string"
+            android:defaultValue="demo uid" />
+        <argument
+            android:name="driverImage"
+            app:argType="string"
+            android:defaultValue="demo image url" />
+        <argument
+            android:name="driverPhone"
+            app:argType="string"
+            android:defaultValue="demo phone" />
+    </fragment>
+    <fragment
+        android:id="@+id/allDriver"
+        android:name="logcat.ayeautoapps.autoadmin.AllDriver"
+        android:label="fragment_all_driver"
+        tools:layout="@layout/fragment_all_driver">
+        <action
+            android:id="@+id/action_allDriver_to_eachDriver"
+            app:destination="@id/eachDriver"
+            app:popUpTo="@id/eachDriver" />
+        <argument
+            android:name="standNameArg"
+            app:argType="string"
+            android:defaultValue="Demo" />
+    </fragment>
+    <fragment
+        android:id="@+id/addAutoStand"
+        android:name="logcat.ayeautoapps.autoadmin.AddAutoStand"
+        android:label="fragment_add_auto_stand"
+        tools:layout="@layout/fragment_add_auto_stand" />
+    <fragment
+        android:id="@+id/viewAutoStands"
+        android:name="logcat.ayeautoapps.autoadmin.ViewAutoStands"
+        android:label="fragment_view_auto_stands"
+        tools:layout="@layout/fragment_view_auto_stands">
+        <action
+            android:id="@+id/action_viewAutoStands_to_allDriver"
+            app:destination="@id/allDriver"
+            app:popUpTo="@id/allDriver" />
+    </fragment>
+    <fragment
+        android:id="@+id/fareTable2"
+        android:name="logcat.ayeautoapps.autoadmin.FareTable"
+        android:label="fragment_fare_table"
+        tools:layout="@layout/fragment_fare_table" />
+
+
+</navigation>

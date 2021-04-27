@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddAutoStand">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/add_layer1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/auto_stand_details"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/saveStandDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save"
+                android:textColor="@color/textColor"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_below="@+id/add_layer1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        app:cardElevation="5dp">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textSize="12sp"
+                   android:textColor="@color/textColor"
+                   android:text="@string/add_stand_auto_stand_name"/>
+
+               <EditText
+                   android:id="@+id/standName"
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:layout_height="wrap_content"
+                   android:inputType="text"
+                   android:padding="10dp"
+                   android:background="@drawable/edittextstyle"
+                   android:importantForAutofill="no" />
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textSize="12sp"
+                   android:textColor="@color/textColor"
+                   android:text="@string/add_stand_land_mark"/>
+
+               <TextView
+                   android:id="@+id/landMark"
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:layout_height="wrap_content"
+                   android:paddingTop="13dp"
+                   android:paddingLeft="15dp"
+                   android:paddingBottom="15dp"
+                   android:background="@drawable/edittextstyle"
+                   android:importantForAutofill="no" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:padding="5dp"
+               android:layout_gravity="center"
+               android:orientation="vertical">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textStyle="bold"
+                   android:textSize="12sp"
+                   android:textColor="@color/textColor"
+                   android:text="@string/stand_representative"/>
+
+               <EditText
+                   android:id="@+id/nomineeNumber"
+                   android:layout_width="match_parent"
+                   android:layout_marginTop="10dp"
+                   android:layout_height="wrap_content"
+                   android:inputType="phone"
+                   android:padding="10dp"
+                   android:background="@drawable/edittextstyle"
+                   android:importantForAutofill="no" />
+
+           </LinearLayout>
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:orientation="horizontal"
+               android:padding="5dp">
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/members"
+                   android:textColor="@color/colorPrimaryDark"
+                   android:textSize="15sp"
+                   android:textStyle="bold" />
+
+               <Space
+                   android:layout_width="0dp"
+                   android:layout_height="wrap_content"
+                   android:layout_weight="1" />
+
+               <TextView
+                   android:id="@+id/addMember"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/add"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/textColor"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+
+               <TextView
+                   android:id="@+id/removeMember"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="@string/remove"
+                   android:layout_marginRight="10dp"
+                   android:textColor="@color/textColor"
+                   android:textSize="16sp"
+                   android:textStyle="bold" />
+
+           </LinearLayout>
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/addMemberRecyclerView"
+               android:layout_width="match_parent"
+               android:paddingBottom="5dp"
+               android:layout_height="match_parent"/>
+       </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

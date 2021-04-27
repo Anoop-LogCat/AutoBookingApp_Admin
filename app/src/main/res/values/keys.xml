@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="MAP_BOX_API_KEY">sk.eyJ1IjoibG9nY2F0MjAyMCIsImEiOiJja2gxeWhvamMwOWw4MzBsc2huaTNzeHRwIn0.P5nQbouX_frnt5w-l58MPg</string>
+    <string name="MAP_STYLE_URL">mapbox://styles/logcat2020/ckh1ykb8g08mq1alebrijatai</string>
+    <string name="ICON_ID">ICON_ID</string>
+</resources>

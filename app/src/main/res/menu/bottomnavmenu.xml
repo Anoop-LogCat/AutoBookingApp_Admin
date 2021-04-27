@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/addAutoStand"
+        android:title="@string/add_stand"
+        android:icon="@drawable/icon_nav_1"
+        />
+
+    <item
+        android:id="@+id/viewAutoStands"
+        android:title="@string/view_stand"
+        android:icon="@drawable/icon_nav_2" />
+
+    <item
+        android:id="@+id/fareTable2"
+        android:title="@string/fareTable"
+        android:icon="@drawable/faretableicon" />
+</menu>

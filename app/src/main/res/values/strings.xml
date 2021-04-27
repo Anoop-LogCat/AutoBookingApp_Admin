@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Taksowka</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="sign_in">Already have an Account</string>
+    <string name="sign_up">Authentication</string>
+    <string name="Sign_in_text">Welcome Back</string>
+    <string name="no_land_mark">no land mark</string>
+
+    <string name="welcome">"Welcome!"</string>
+    <string name="phone">phone</string>
+    <string name="user">user name</string>
+    <string name="aye_auto_admin">Aye Auto Admin</string>
+    <string name="add_stand">Add Auto Stand</string>
+    <string name="view_stand">View Auto Stand</string>
+    <string name="auto_stand_details">Auto Stand Details</string>
+    <string name="save">save</string>
+    <string name="add_stand_number_of_drivers">Number of Drivers</string>
+    <string name="add_stand_land_mark">Land Mark</string>
+    <string name="add_stand_auto_stand_name">Auto Stand Name</string>
+    <string name="members">Members</string>
+    <string name="add">add</string>
+    <string name="remove">remove</string>
+    <string name="confirm_location">CONFIRM LOCATION</string>
+    <string name="districts">Districts</string>
+    <string name="auto_stand">Auto Stand</string>
+    <string name="stand_representative">Stand Representative</string>
+    <string name="history">History</string>
+    <string name="today_s_collection">Today\'s Collection</string>
+    <string name="verification_code">Verification Code</string>
+
+    <string name="trivandrum">Trivandrum</string>
+    <string name="kollam">Kollam</string>
+    <string name="alappuzha">Alappuzha</string>
+    <string name="pathanamthitta">Pathanamthitta</string>
+    <string name="ernakulam">Ernakulam</string>
+    <string name="thrissur">Thrissur</string>
+    <string name="palakkad">Palakkad</string>
+    <string name="malappuram">Malappuram</string>
+    <string name="wayanadu">Wayanadu</string>
+    <string name="kasaragod">Kasaragod</string>
+    <string name="kottayam">Kottayam</string>
+    <string name="idukki">Idukki</string>
+    <string name="kozhikode">Kozhikode</string>
+    <string name="kannur">Kannur</string>
+    <string name="fareTable">Fare Table</string>
+    <string name="fare_table">Fare Table</string>
+</resources>

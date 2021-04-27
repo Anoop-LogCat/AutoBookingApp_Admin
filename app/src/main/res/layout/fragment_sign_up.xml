@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/list_item_spacing_half"
+    android:padding="@dimen/list_item_spacing_half"
+    tools:context=".SignUpFragment">
+
+   <ImageView
+       android:id="@+id/signUpClose_button"
+       android:layout_width="30dp"
+       android:layout_height="30dp"
+       android:src="@drawable/close_icon"/>
+
+    <TextView
+        android:layout_below="@+id/signUpClose_button"
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/sign_up"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signUpUserNameLayout"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/user"
+        app:endIconMode="clear_text"
+        app:startIconDrawable="@drawable/icon_user"
+        app:startIconContentDescription="icon_user"
+        app:helperTextTextColor="@color/colorAccent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpUsernameEditText"
+            android:inputType="text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/signUpPhoneLayout"
+        android:layout_below="@id/signUpUserNameLayout"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone"
+        app:endIconMode="clear_text"
+        app:counterEnabled="true"
+        app:counterMaxLength="10"
+        app:errorEnabled="true"
+        app:helperTextTextColor="@color/colorAccent"
+        app:startIconDrawable="@drawable/icon_phone"
+        app:startIconContentDescription="icon_phone"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/signUpPhoneEditText"
+            android:inputType="number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/signUpButton"
+        android:layout_below="@+id/signUpPhoneLayout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/authbutton"
+        android:layout_alignParentEnd="true" >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/confirm_arrow"/>
+    </RelativeLayout>
+
+</RelativeLayout>
